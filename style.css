@@ -1,0 +1,122 @@
+/* 
+Unit 4 - Day 018
+Poke'dex Challenge
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* TODO: Update the Background of the Body */
+  body {
+    background: url(https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80);
+    overflow: hidden;
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+  }
+  /* TODO: Fix container make the input field above the pokemon card and center it on the page */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* TODO: Add Margin To Bottom */
+  .search-form {
+    margin-bottom: 1rem;
+    display: flex;
+  }
+  /* TODO: Fix width to match the card width minus 60px */
+  /* TODO: Add a 2px solid #2E66B9 border */
+  .search-input {
+    padding: 0.5rem;
+    min-width: 240px;
+    border: 2px solid #2e66b9;
+  }
+  /* TODO: Fix width of button to 60px */
+  /* TODO: Button color to #2E66B9 */
+  /* TODO: Text Color to be white */
+  /* TODO: Add border radius top right and bottom right 5px */
+  .submit-btn {
+    border: none;
+    padding: 0.4rem;
+    font-size: 1rem;
+    min-width: 60px;
+    background: #2e66b9;
+    color: white;
+    /*   border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px; */
+    border-radius: 0 5px 5px 0;
+  }
+  /* TODO: Background Gradient  #F5A329 #E9CD2D*/
+  .card {
+    background-image: linear-gradient(#f5a329, #e9cd2d);
+    background-color: white;
+    padding: 1rem;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0px 10px 40px -10px;
+    border-radius: 5px;
+  }
+  
+  .card-header {
+    display: flex;
+    height: 60px;
+    align-items: top;
+    justify-content: space-between;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  
+  .hp {
+    margin: 0.2rem;
+  }
+  
+  span {
+    font-size: 0.7rem;
+  }
+  
+  /* TODO: Fix button it's not bring in an image  */
+  .card-img img {
+    /* TODO: Fix the size to 200px */
+    width: 250px;
+  }
+  
+  .card-body {
+    margin-top: 3rem;
+  }
+  
+  .card-body-header {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* TODO: Fix background color to red and text to white */
+  .card-body-header h3 {
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: 400;
+    background: red;
+    color: white;
+  }
+  
+  .card-body-header h2 {
+    color: red;
+    font-size: 1.4rem;
+    margin-top: 0.3rem;
+  }
+  
+  .paragraph {
+    margin: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+  }
+  
